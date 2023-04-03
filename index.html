@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum App</title>
+</head>
+<body style="background-image: url('img/0.jpg');">
+    <h2 id="clock">00:00:00</h2>
+    <!-- form을 쓸 경우 필수 입력 항목 (required)을 체크할수 있다 -->
+    <form id="login-form" class="hidden">
+        <!-- 필수 입력 항목 required -->
+        <input required maxlength="15" type="text" placeholder="what is yout name?">
+        <!-- 주로 form을 서버로 전송하기 전에 내용을 검증하거나 form 전송을 취소할 때 사용 -->
+        <input type="submit" value="Log In">
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press Enter">
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
